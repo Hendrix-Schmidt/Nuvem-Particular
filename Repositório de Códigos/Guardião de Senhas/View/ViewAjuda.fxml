@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.3093645484949833" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" styleClass="background" stylesheets="Css/CssDarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerViewAjuda">
+  <items>
+    <AnchorPane fx:id="anchorEsquerda" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
+         <children>
+            <ImageView fx:id="imgAjudaCad" fitHeight="64.0" fitWidth="64.0" layoutX="57.0" layoutY="25.0" onMouseClicked="#imgAjudaCad" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CircledPlus_opt%20(2).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgAjudaCons" fitHeight="64.0" fitWidth="64.0" layoutX="56.0" layoutY="121.0" onMouseClicked="#imgAjudaCons" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1460760463_magnifier_opt%20(2).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgAjudaRem" fitHeight="64.0" fitWidth="64.0" layoutX="56.0" layoutY="214.0" onMouseClicked="#imgAjudaRem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/remove-circle_opt%20(2).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgAjudaEdit" fitHeight="64.0" fitWidth="64.0" layoutX="56.0" layoutY="312.0" onMouseClicked="#imgAjudaEdit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1460760372_pencil_opt%20(2).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="89.0" prefHeight="25.0" prefWidth="161.0" styleClass="label_10" text="Como cadastrar um item?" />
+            <Label layoutX="15.0" layoutY="185.0" styleClass="label_10" text="Como fazer um consulta?" />
+            <Label layoutX="14.0" layoutY="278.0" styleClass="label_10" text="Como remover um item?" />
+            <Label layoutX="20.0" layoutY="376.0" styleClass="label_10" text="Como editar um item?" />
+            <ImageView fx:id="imgAjudaFunci" fitHeight="64.0" fitWidth="64.0" layoutX="56.0" layoutY="403.0" onMouseClicked="#imgAjudaFunci" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/admin_lock_closed.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="467.0" styleClass="label_10" text="Como isso Funciona?" />
+         </children></AnchorPane>
+    <AnchorPane fx:id="anchorDireita" minHeight="0.0" minWidth="0.0" prefHeight="512.0" prefWidth="243.0" styleClass="background">
+         <children>
+            <AnchorPane fx:id="anchorAjudaCad" prefHeight="512.0" prefWidth="410.0" styleClass="background" visible="false">
+               <children>
+                  <TextArea layoutX="4.0" layoutY="52.0" prefHeight="75.0" prefWidth="403.0" styleClass="textArea" text="Preencha todos os campos, selecione uma categoria. &#10;Apos isso clique no botão salvar.&#10;" />
+                  <Label layoutX="14.0" layoutY="14.0" text="Dicas para fazer cadastros." />
+               </children></AnchorPane>
+            <AnchorPane fx:id="anchorAjudaCons" prefHeight="463.0" prefWidth="410.0" styleClass="background" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Dicas para fazer consultas." />
+                  <TextArea layoutX="4.0" layoutY="53.0" prefHeight="96.0" prefWidth="403.0" styleClass="textArea" text="Para fazer uma consulta simples basta clicar no ícone de &#10;consulta quese localiza no painel de consulta.&#10;Assim que entrar na  pagina de consulta atabela ja ira conter &#10;todos os itens cadastrados." />
+                  <TextArea layoutX="4.0" layoutY="184.0" prefHeight="96.0" prefWidth="403.0" styleClass="textArea" text="Para fazer uma consulta avançada clique no icone&#10;de consulta livre  que se localiza no painel de consulta,&#10;isso te levara a tela de busca livre.&#10;Digite sua busca no campo busca e clique em pesquisar." />
+               </children></AnchorPane>
+            <AnchorPane fx:id="anchorAjudaRem" prefHeight="463.0" prefWidth="410.0" styleClass="textArea" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Dicas para excluir um item." />
+                  <TextArea layoutX="4.0" layoutY="60.0" prefHeight="96.0" prefWidth="403.0" text="Para excluir um item basta seleciona-lo pelo ID no &quot;MenuID&quot;&#10;e após isso o item selecionado ira aparecer abaixo para &#10;consulta, se for o item desejado é só clicar em excluir e depois&#10;confirmar se realmente deseja exclui-lo." />
+               </children></AnchorPane>
+            <AnchorPane fx:id="anchorAjudaEdit" prefHeight="463.0" prefWidth="410.0" styleClass="background" visible="false">
+               <children>
+                  <Label layoutX="15.0" layoutY="56.0" text="- Primeiro passo:" />
+                  <TextArea editable="false" layoutX="4.0" layoutY="77.0" prefHeight="57.0" prefWidth="403.0" styleClass="textArea" text="Selecione um ID no &quot;MenuID&quot; isso ira preencher todos os &#10;campos menos o campo de categorias." wrapText="true" />
+                  <TextArea editable="false" layoutX="4.0" layoutY="176.0" prefHeight="57.0" prefWidth="403.0" styleClass="textArea" text="Edite os campos que quiser selecione uma categoria&#10;e clique em Salvar." wrapText="true" />
+                  <Label layoutX="14.0" layoutY="155.0" text="- Segundo passo:" />
+                  <Label layoutX="15.0" layoutY="14.0" text="Dicas para editar um item." />
+               </children></AnchorPane>
+            <AnchorPane fx:id="anchorAjudaFunci" prefHeight="463.0" prefWidth="410.0" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Como esse programa funciona?" />
+                  <TextArea layoutX="4.0" layoutY="43.0" prefHeight="409.0" prefWidth="403.0" styleClass="textArea" text="&#10;Como este programa protege meus dados?&#10;&#9;Para proteger os dados é usado criptografia, assim&#10;&#9;a mensagem cadastrada mais importante é codificada&#10;&#9;e fica ílegivel para quem não tem a senha principal.&#10;&#10;Senha Principal?&#10;&#9;A senha principal é a sua senha de login no programa.&#10;&#10;Pode ter mais de um úsuario?&#10;&#9;Sim, desde que não seja logado ao mesmo tempo.&#10;&#9;Os dados de cada úsuario são guardados separadamente &#10;&#9;e cada dado é codifica conforme a senha do úsuario.&#10;&#10;Posso te mandar sugestões?&#10;&#9;Para isso basta clicar no ícone de sugestões no painel &#10;&#9;principal,&#9;ao clicar o programa ira usar internet para &#10;&#9;abrir uma página onde poderá preencher um formu-&#10;&#9;lário.  " />
+               </children></AnchorPane>
+            <Text fx:id="textTexto" fill="WHITE" layoutX="100.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Clique em algum icone ao lado!">
+               <effect>
+                  <Reflection fraction="0.6" topOpacity="0.19" />
+               </effect>
+            </Text>
+            <Button fx:id="butonVoltar" layoutX="309.0" layoutY="463.0" mnemonicParsing="false" onAction="#butonVoltar" text="Voltar" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

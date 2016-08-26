@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPai" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" styleClass="background" stylesheets="Css/CssDarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerViewPrincipal">
+   <children>
+      <AnchorPane fx:id="anchorLogin" layoutX="67.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="467.0" styleClass="background" visible="false">
+         <children>
+            <TextField fx:id="textLoginLog" layoutX="118.0" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Digite seu Login" styleClass="textfield" />
+            <PasswordField fx:id="passSenhaLogin" layoutX="118.0" layoutY="283.0" prefHeight="33.0" prefWidth="235.0" promptText="Digite sua senha" styleClass="textfield" />
+            <Button fx:id="buttonEntrarLogin" layoutX="120.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonEntrarLogin" prefHeight="33.0" prefWidth="90.0" styleClass="button" text="Entrar" />
+            <Button fx:id="ButtonCancelarLogin" layoutX="260.0" layoutY="358.0" mnemonicParsing="false" onAction="#ButtonCancelarLogin" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <Button fx:id="buttonCliqueAqui" layoutX="245.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCliqueAqui" prefHeight="33.0" prefWidth="106.0" styleClass="buttonCliqueAqui" text="Clique aqui!" />
+            <Label layoutX="115.0" layoutY="178.0" prefHeight="33.0" prefWidth="130.0" styleClass="label-bright" text="Não tem cadastro? " />
+            <ImageView fitHeight="170.0" fitWidth="400.0" layoutX="70.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/NOVO-logo-Nome-Completo-Correto.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="458.0" text="Copyright (c) 2016 - Hendrix Schmidt - All rights reserved." />
+            <Label layoutX="233.0" layoutY="126.0" text="Guadião de Senhas." />
+            <ImageView fitHeight="33.0" fitWidth="60.0" layoutX="420.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Hendrix-logo-cor-correta.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="184.0" layoutY="418.0" text="VERSÃO - BETA" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorCadUser" layoutX="67.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="467.0" visible="false">
+         <children>
+            <TextField fx:id="textNome" layoutX="116.0" layoutY="186.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Digite o seu primeiro nome" styleClass="textfieldInter">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="textSobrenome" layoutX="116.0" layoutY="237.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Digite o seu sobrenome" styleClass="textfieldInter" />
+            <TextField fx:id="textUsuario" layoutX="116.0" layoutY="290.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Ex: NOME.SOBRENOME" styleClass="textfieldInter" />
+            <PasswordField fx:id="passSenha" layoutX="116.0" layoutY="344.0" prefHeight="33.0" prefWidth="235.0" promptText="Digite sua senha" styleClass="textfieldInter" />
+            <PasswordField fx:id="passSenhaConfirm" layoutX="116.0" layoutY="392.0" prefHeight="33.0" prefWidth="235.0" promptText="Confirme a sua senha" styleClass="textfieldInter" />
+            <Button fx:id="buttonCadUser" layoutX="116.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCadUser" prefHeight="33.0" prefWidth="90.0" text="Salvar" />
+            <Button fx:id="buttonCancelarUser" layoutX="261.0" layoutY="445.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCancelarUser" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <ImageView fitHeight="170.0" fitWidth="400.0" layoutX="70.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/NOVO-logo-Nome-Completo-Correto.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="119.0" layoutY="157.0" text="Cadastre seu usuário aqui." />
+            <Label layoutX="233.0" layoutY="126.0" text="Guadião de Senhas." />
+         </children></AnchorPane>
+      <AnchorPane fx:id="anchorPrincipal" layoutX="11.0" layoutY="11.0" prefHeight="492.0" prefWidth="580.0" visible="false">
+         <children>
+            <Button fx:id="buttonSairPrincipal" layoutX="446.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonSairPrincipal" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <ImageView fx:id="imgCadItem" fitHeight="104.0" fitWidth="100.0" layoutX="35.0" layoutY="169.0" onMouseClicked="#imgCadItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CircledPlus.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.37" topOpacity="0.03" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgConsItem" fitHeight="104.0" fitWidth="100.0" layoutX="176.0" layoutY="169.0" onMouseClicked="#imgConsItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1460760463_magnifier.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.37" topOpacity="0.03" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgRemovItem" fitHeight="104.0" fitWidth="100.0" layoutX="310.0" layoutY="169.0" onMousePressed="#imgRemovItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/remove-circle.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.37" topOffset="1.0" topOpacity="0.03" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="imgAltItem" fitHeight="104.0" fitWidth="100.0" layoutX="446.0" layoutY="169.0" onMousePressed="#imgAltItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1460760372_pencil.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.37" topOpacity="0.03" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="14.0" prefHeight="62.0" prefWidth="375.0" styleClass="label-header" text="Guardião de senhas">
+               <effect>
+                  <Bloom threshold="0.06" />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="imgAjuda" fitHeight="55.0" fitWidth="50.0" layoutX="64.0" layoutY="415.0" onMouseClicked="#imgAjuda" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Duvidas.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="labelNomeusuario" layoutX="214.0" layoutY="87.0" prefHeight="21.0" prefWidth="248.0" text="..." />
+            <Label layoutX="166.0" layoutY="344.0" text="Nunca revele suas senhas a ninguem." />
+            <Label layoutX="111.0" layoutY="87.0" text="Seja bem-vindo" />
+            <ImageView fx:id="imgWebView" fitHeight="55.0" fitWidth="50.0" layoutX="139.0" layoutY="416.0" onMouseClicked="#imgWebView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/world_comment.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="labelAjuda" layoutX="54.0" layoutY="459.0" styleClass="label_07" text="Começe por aqui." />
+            <Label fx:id="labelSugest" layoutX="143.0" layoutY="459.0" styleClass="label_07" text="Sugestoẽs." />
+            <ImageView fx:id="imgConfig" fitHeight="55.0" fitWidth="50.0" layoutX="214.0" layoutY="415.0" onMouseClicked="#imgConfig" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/gear_gear.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="labelConf" layoutX="209.0" layoutY="459.0" styleClass="label_07" text="Configurações" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorConsInter" prefHeight="514.0" prefWidth="600.0" visible="false">
+         <children>
+            <ImageView fx:id="imgConsSimples" fitHeight="120.0" fitWidth="100.0" layoutX="111.0" layoutY="194.0" onMouseClicked="#imgConsSimples" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/busca%20soimples.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgConsLivre" fitHeight="120.0" fitWidth="100.0" layoutX="383.0" layoutY="194.0" onMouseClicked="#imgConsLivre" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/busca%20livre.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonVoltarConsInter" layoutX="457.0" layoutY="451.0" mnemonicParsing="false" onAction="#buttonVoltarConsInter" prefHeight="33.0" prefWidth="90.0" text="Voltar" />
+            <Label fx:id="labelConsSimples" layoutX="105.0" layoutY="299.0" text="Consulta simples" />
+            <Label fx:id="labelConsLivre" layoutX="386.0" layoutY="299.0" text="Consulta Livre" />
+            <Label layoutX="118.0" layoutY="14.0" styleClass="label-header" text="Escolha sua consulta">
+               <effect>
+                  <Bloom />
+               </effect></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorRemoverItem" layoutX="67.0" layoutY="11.0" prefHeight="492.0" prefWidth="467.0" visible="false">
+         <children>
+            <Button fx:id="buttonRemoverRemov" layoutX="116.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonRemoverRemov" prefHeight="33.0" prefWidth="106.0" text="Remover" />
+            <Button fx:id="buttonCancRemov" layoutX="261.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCancRemov" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <ComboBox fx:id="comboRemItem" layoutX="116.0" layoutY="155.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#comboRemItem" prefHeight="33.0" prefWidth="235.0" promptText="Menu ID" styleClass="comboBox" />
+            <Label layoutX="23.0" layoutY="14.0" prefHeight="62.0" prefWidth="276.0" styleClass="label-header" text="Remover itens">
+               <effect>
+                  <Bloom />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="33.0" layoutY="76.0" prefHeight="47.0" prefWidth="433.0" text="Ao selecionar um ID no menu a tabela abaixo será preenchida!" />
+            <Label fx:id="labelRemItem" layoutX="166.0" layoutY="265.0" prefHeight="21.0" prefWidth="235.0" styleClass="label-bright" text=" ?" />
+            <Label fx:id="labelRemSenha" layoutX="166.0" layoutY="294.0" prefHeight="21.0" prefWidth="235.0" styleClass="label-bright" text=" ?" />
+            <Label fx:id="labelRemObs" layoutX="166.0" layoutY="323.0" prefHeight="21.0" prefWidth="235.0" styleClass="label-bright" text=" ?" />
+            <Label fx:id="labelRemCat" layoutX="166.0" layoutY="239.0" prefHeight="21.0" prefWidth="140.0" styleClass="label-bright" text=" ?" />
+            <Label layoutX="69.0" layoutY="239.0" text="Categoria:" />
+            <Label layoutX="70.0" layoutY="265.0" prefHeight="21.0" prefWidth="65.0" text="Item:" />
+            <Label layoutX="70.0" layoutY="294.0" prefHeight="21.0" prefWidth="65.0" text="Senhas:" />
+            <Label layoutX="70.0" layoutY="323.0" prefHeight="21.0" prefWidth="90.0" text="Observações:" />
+            <Separator layoutX="62.0" layoutY="259.0" prefWidth="340.0" />
+            <Separator layoutX="62.0" layoutY="283.0" prefWidth="340.0" />
+            <Separator layoutX="62.0" layoutY="312.0" prefWidth="340.0" />
+            <Separator layoutX="62.0" layoutY="343.0" prefWidth="340.0" />
+            <Separator layoutX="161.0" layoutY="236.0" orientation="VERTICAL" prefHeight="120.0" />
+            <Label fx:id="labelRemId" layoutX="225.0" layoutY="207.0" styleClass="label-bright" text=" ?" />
+            <Label layoutX="33.0" layoutY="113.0" text="Após isso clique em remover." />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorAlterarItem" layoutX="67.0" layoutY="11.0" prefHeight="492.0" prefWidth="467.0" visible="false">
+         <children>
+            <ComboBox fx:id="comboAltItens" layoutX="116.0" layoutY="145.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#comboAltItens" prefHeight="33.0" prefWidth="235.0" promptText="Menu ID" styleClass="comboBox" />
+            <ComboBox fx:id="comboAltCat" layoutX="116.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Categoria" styleClass="comboBox" />
+            <TextField fx:id="textAltItem" layoutX="116.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Item" styleClass="textfieldInter" />
+            <TextField fx:id="textAltSenha" layoutX="116.0" layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Senha" styleClass="textfieldInter" />
+            <TextField fx:id="textAltObs" layoutX="116.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Observações" styleClass="textfieldInter" />
+            <Button fx:id="buttonSalvarAlt" layoutX="116.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonSalvarAlt" prefHeight="33.0" prefWidth="90.0" text="Salvar" />
+            <Button fx:id="buttonCancAlt" layoutX="261.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCancAlt" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <Label layoutX="26.0" layoutY="14.0" prefHeight="62.0" prefWidth="235.0" styleClass="label-header" text="Alterar itens">
+               <effect>
+                  <Bloom />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="33.0" layoutY="76.0" prefHeight="47.0" prefWidth="433.0" text="Altere seus itens de forma simples ao seleciona-lo no Menu ID!" />
+            <Label layoutX="40.0" layoutY="254.0" text="ID : " />
+            <Label fx:id="labelAltItemId" layoutX="63.0" layoutY="254.0" prefHeight="21.0" prefWidth="39.0" styleClass="label-bright" text=" ?" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorConsulta" layoutX="-2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="214.0" styleClass="label-header" text="Consultas">
+               <effect>
+                  <Bloom />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Button fx:id="buttonVoltarCons" layoutX="483.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonVoltarCons" prefHeight="33.0" prefWidth="90.0" text="Voltar" />
+            <TableView fx:id="tableConsItem" layoutX="4.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="592.0" styleClass="tableView">
+              <columns>
+                  <TableColumn fx:id="tableColId" prefWidth="51.0" text="ID" />
+                <TableColumn fx:id="tableColCategoria" prefWidth="97.0" text="Categoria" />
+                  <TableColumn fx:id="tableColUsuario" prefWidth="150.0" text="Usuário" />
+                <TableColumn fx:id="tableColSenhas" prefWidth="114.0" text="Senhas" />
+                  <TableColumn fx:id="tableColObserv" prefWidth="173.0" styleClass="table-view" text="Observações" />
+              </columns>
+            </TableView>
+            <Label layoutX="93.0" layoutY="66.0" text="Simples consulta." />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorConsultaAvancada" layoutX="-2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="62.0" prefWidth="351.0" styleClass="label-header" text="Consulta Avançada">
+               <effect>
+                  <Bloom />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Button fx:id="buttonVoltarConsAvan" layoutX="483.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonVoltarConsAvan" prefHeight="33.0" prefWidth="90.0" text="Voltar" />
+            <TextField fx:id="textBusca" layoutX="52.0" layoutY="146.0" prefHeight="33.0" prefWidth="266.0" styleClass="textfield" />
+            <Button fx:id="buttonPesquisar" layoutX="395.0" layoutY="146.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonPesquisar" prefHeight="33.0" prefWidth="116.0" text="Pesquisar" />
+            <Separator layoutX="17.0" layoutY="199.0" opacity="0.51" prefWidth="566.0" />
+            <TableView fx:id="tableConsAvanc" layoutX="7.0" layoutY="225.0" prefHeight="283.0" prefWidth="592.0" styleClass="tableView">
+              <columns>
+                  <TableColumn fx:id="columId" prefWidth="43.0" text="ID" />
+                <TableColumn fx:id="columCat" prefWidth="109.0" text="Categoria" />
+                <TableColumn fx:id="columUsuario" prefWidth="120.0" text="Usuário" />
+                  <TableColumn fx:id="columSenha" prefWidth="125.0" text="Senha" />
+                  <TableColumn fx:id="columObs" prefWidth="180.0" text="Observação" />
+              </columns>
+            </TableView>
+            <Label layoutX="60.0" layoutY="66.0" text="A busca diferencia letras maiúsculas de minúsculas." />
+            <Label layoutX="60.0" layoutY="87.0" text="Para fazer uma pesquisa basta digitar uma palavra completa ou incompleta" />
+            <Label layoutX="60.0" layoutY="108.0" text="ou até mesmo um número." />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorCadItem" layoutX="67.0" layoutY="11.0" prefHeight="492.0" prefWidth="467.0" visible="false">
+         <children>
+            <ComboBox fx:id="comboCategoriaItemCad" layoutX="116.0" layoutY="155.0" prefHeight="35.0" prefWidth="235.0" promptText="Categoria" styleClass="comboBox" />
+            <TextField fx:id="textNomeItemCad" layoutX="116.0" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Nome do item" styleClass="textfieldInter" />
+            <TextField fx:id="textSenhaItemCad" layoutX="116.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Senha do item" styleClass="textfieldInter" />
+            <TextField fx:id="textObsItemCad" layoutX="116.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="235.0" promptText="Observações" styleClass="textfieldInter" />
+            <Button fx:id="buttonSalvarCadItem" layoutX="116.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonSalvarCadItem" prefHeight="33.0" prefWidth="90.0" text="Salvar" />
+            <Button fx:id="buttonSairCadItem" layoutX="261.0" layoutY="401.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonSairCadItem" prefHeight="33.0" prefWidth="90.0" text="Sair" />
+            <Label layoutX="25.0" layoutY="14.0" prefHeight="62.0" prefWidth="326.0" styleClass="label-header" text="Cadastro de itens">
+               <effect>
+                  <Bloom />
+               </effect>
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label layoutX="33.0" layoutY="76.0" prefHeight="47.0" prefWidth="412.0" text="Cadastre e-mails, senhas e deixe suas observações!" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorCadInter" prefHeight="514.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="212.0" layoutY="14.0" styleClass="label-header" text="Cadastros">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fx:id="imgCadastroItem" fitHeight="120.0" fitWidth="100.0" layoutX="111.0" layoutY="194.0" onMouseClicked="#imgCadastroItem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CircledPlusItem.png" />
+               </image></ImageView>
+            <ImageView fx:id="imgCadastroCateg" fitHeight="120.0" fitWidth="100.0" layoutX="383.0" layoutY="194.0" onMouseClicked="#imgCadastroCateg" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CircledPlusCateg.png" />
+               </image></ImageView>
+            <Label fx:id="labelCadItem" layoutX="104.0" layoutY="302.0" text="Cadastro de Item" />
+            <Label fx:id="labelCadCateg" layoutX="360.0" layoutY="302.0" text="Cadastro de categoria" />
+            <Button fx:id="buttonVoltarCadInter" layoutX="457.0" layoutY="451.0" mnemonicParsing="false" onAction="#buttonVoltarCadInter" prefHeight="33.0" prefWidth="90.0" text="Voltar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorConfig" prefHeight="512.0" prefWidth="600.0" visible="false">
+         <children>
+            <ImageView fx:id="imgExcluirUsuario" fitHeight="62.0" fitWidth="61.0" layoutX="52.0" layoutY="72.0" onMouseClicked="#imgExcluirUsuario" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/management_stop.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="141.0" styleClass="label_10" text="Excluir Usuario" />
+            <Button fx:id="buttonVoltarConfig" layoutX="458.0" layoutY="451.0" mnemonicParsing="false" onAction="#buttonVoltarConfig" text="Voltar" />
+            <Label layoutX="16.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="257.0" styleClass="label-header" text="Configurações">
+               <effect>
+                  <Bloom />
+               </effect></Label>
+            <ImageView fx:id="imgAlterarTema" fitHeight="62.0" fitWidth="61.0" layoutX="159.0" layoutY="72.0" onMouseClicked="#imgAlterarTema" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1465155438_cmyk.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="150.0" layoutY="141.0" styleClass="label_10" text="Alterar Tema" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorExcUser" prefHeight="512.0" prefWidth="600.0" visible="false">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Label layoutX="16.0" layoutY="2.0" styleClass="label-header" text="Excluir usúario">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label layoutX="47.0" layoutY="64.0" text="Ao clicar em excluir tudo que ja existiu sobre você no sistema será apagado." />
+            <Button fx:id="buttonExUser" layoutX="225.0" layoutY="222.0" mnemonicParsing="false" onAction="#buttonExUser" prefHeight="69.0" prefWidth="151.0" text="Excluir" />
+            <Button fx:id="buttonVoltarExUser" layoutX="458.0" layoutY="451.0" mnemonicParsing="false" onAction="#buttonVoltarExUser" text="Voltar" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

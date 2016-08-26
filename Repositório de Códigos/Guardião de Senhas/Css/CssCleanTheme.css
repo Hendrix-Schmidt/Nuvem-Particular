@@ -1,0 +1,188 @@
+.background {
+    -fx-background-color: white;
+}
+.image{
+    -fx-content: "TESTEST";
+}
+.image :hover{
+    -fx-content: "TESTEST";
+}
+.textArea{
+    -fx-border-color:white;
+    -fx-control-inner-background: white;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #000000;
+    
+}
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #000000;
+    -fx-opacity: 0.6;
+}
+.label_10 {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #000000;
+    -fx-opacity: 0.6;
+}
+.label_07 {
+    -fx-font-size: 07pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #000000;
+    -fx-opacity: 0.6;
+}
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #000000;
+    -fx-opacity: 1;
+}
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #000000;
+    -fx-opacity: 1;
+}
+.comboBox{
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-font: 12px "Segoe UI Semibold";
+    -fx-border-color: #383838;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-image:  url("../Images/combo.png");
+    -fx-background-size: auto auto;
+    -fx-effect:dropshadow(three-pass-box, grey, 15, 0.1, 0, 0);
+}
+.comboBox:hover{
+       -fx-effect:dropshadow(three-pass-box, grey, 20, 0.4, 0, 0);
+       -fx-border-width: 2px;
+}
+.textfield {
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-font: 15px "Segoe UI Semibold";
+    -fx-border-color: rgba(56,56,56,1);  
+    -fx-background-image:  url("../Images/textfundo.png");
+    -fx-background-position: 50% 50%;
+    -fx-background-size: auto auto;
+    -fx-effect:dropshadow(three-pass-box, grey, 15, 0.1, 0, 0);
+}
+.textfieldInter {
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-font: 12px "Segoe UI Semibold";
+    -fx-border-color: rgba(56,56,56,1);
+    -fx-background-image:  url("textfundo.png");
+    -fx-background-position: 50% 50%;
+    -fx-background-size: auto auto;
+    -fx-effect:dropshadow(three-pass-box, grey, 15, 0.1, 0, 0);
+}
+.textfield:hover{
+       -fx-effect:dropshadow(three-pass-box, grey, 20, 0.4, 0, 0);
+       -fx-border-width: 2px;
+       -fx-border-style: solid;
+       -fx-border-color: rgba(56,56,56,1);
+}
+.textfield:pressed, .textfield:default:hover:pressed {
+  -fx-border-width: 3px;
+  -fx-background-color: rgba(56,56,56,1);
+  -fx-border-style: solid;
+  -fx-text-fill: #1d1d1d;
+  
+}
+.tableView {
+    -fx-base: white;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+    
+}
+.tableView .column-header-background {
+    -fx-background-color: transparent;
+}
+.tableView .column-header, .table-view .filler {
+    -fx-size: 20;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+.tableView .column-header .label {
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #000000;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+.tableView:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #c0c0c0;
+    -fx-text-fill: #000000;
+}
+.tableview .columns:nth-child( odd){
+    -fx-background-color: white;   
+}
+/* 
+ * Metro style Push Button
+ * Author: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #383838;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #000000;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+.buttonCliqueAqui {
+    -fx-padding: 5 10 5 10;   
+    -fx-border-color: #383838;
+    -fx-border-width: 2;
+    -fx-border-radius:0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #000000;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    
+}
+.button:hover {
+    -fx-background-color: #435f87;
+    -fx-text-fill: white;
+    
+}
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #0066ff;
+  -fx-text-fill: white;
+}
+.button:focused {
+    -fx-border-color: #000000, #000000;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #000000;
+}
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

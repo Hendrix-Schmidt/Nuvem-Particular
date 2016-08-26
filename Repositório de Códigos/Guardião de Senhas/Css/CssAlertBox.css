@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/04/2016, 10:32:39
+    Author     : Schmidt
+*/
+.root{
+    -fx-border-style: solid;
+    -fx-border-color: #e2e2e2;
+    -fx-background-color: #1d1d1d;
+    
+}
+
+.label {
+    -fx-alignment: CENTER;
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+.button {
+    
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-alignment: CENTER;
+}
+.button:hover {
+    -fx-background-color: #3a3a3a;
+    
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: White;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+.borda{
+    -fx-border-color: blue;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-border-style: dashed;
+}
+.borda2{
+    -fx-border-color: darkorange;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-border-style: dotted;
+}
+.borda3{
+    -fx-border-color: green;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-border-style: solid;
+}
+
